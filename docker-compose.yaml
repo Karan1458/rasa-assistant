@@ -17,4 +17,4 @@ services:
       context: .
       dockerfile: Dockerfile-webchat
     ports:
-      - 8080:80
+      - ${WEB_CHAT_PORT:-8080}:80
